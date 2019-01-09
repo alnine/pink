@@ -41,7 +41,6 @@ gulp.task("images", function() {
       imagemin.svgo({
         plugins: [
           {removeViewBox: false},
-          {removeXMLNS: true},
           {removeDimensions: true},
           {removeAttrs: {
             attrs: 'version'
