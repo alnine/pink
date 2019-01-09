@@ -12,7 +12,22 @@
     <include src="build/img/sprite.svg"></include>
   </div>
 
-  <header class="page__header"></header>
+  <header class="page__header">
+    <div class="page__header-logo logo">
+      <svg class="logo__img" width="75" height="22">
+        <use xlink:href="#icon-logo-pink-mobile"></use>
+      </svg>
+    </div>
+    <button class="page__header-nav-toggle nav-toggle">Menu</button>
+    <nav class="page__header-main-nav main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a href="#" class="main-nav__link">main</a></li>
+        <li class="main-nav__item"><a href="#" class="main-nav__link">photo</a></li>
+        <li class="main-nav__item"><a href="#" class="main-nav__link">contest</a></li>
+        <li class="main-nav__item"><a href="#" class="main-nav__link">html academy</a></li>
+      </ul>
+    </nav>
+  </header>
 
 </body>
 </html>
