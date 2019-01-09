@@ -13,21 +13,51 @@
   </div>
 
   <header class="page__header">
-    <div class="page__header-logo logo">
-      <svg class="logo__img" width="75" height="22">
-        <use xlink:href="#icon-logo-pink-mobile"></use>
-      </svg>
+    <div class="page__header-wrapper container">
+      <div class="page__header-logo logo">
+        <svg class="logo__img" width="75" height="22">
+          <use xlink:href="#icon-logo-pink-mobile"></use>
+        </svg>
+      </div>
+      <button class="page__header-nav-toggle nav-toggle">Menu</button>
+      <nav class="page__header-main-nav main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="#" class="main-nav__link">main</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">photo</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">contest</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">html academy</a></li>
+        </ul>
+      </nav>
     </div>
-    <button class="page__header-nav-toggle nav-toggle">Menu</button>
-    <nav class="page__header-main-nav main-nav">
-      <ul class="main-nav__list">
-        <li class="main-nav__item"><a href="#" class="main-nav__link">main</a></li>
-        <li class="main-nav__item"><a href="#" class="main-nav__link">photo</a></li>
-        <li class="main-nav__item"><a href="#" class="main-nav__link">contest</a></li>
-        <li class="main-nav__item"><a href="#" class="main-nav__link">html academy</a></li>
-      </ul>
-    </nav>
   </header>
+
+  <div class="page__promo">
+    <div class="page__promo-wrapper container">
+      <div class="page__promo-info">
+        <a class="page__promo-download-btn" href="#">Download App</a>
+        <ul class="page__promo-market-list">
+          <li class="page__promo-market-item">
+            <a class="page__promo-market-link" href="#">
+              <img class="page__promo-market-img" src="img/logo-apple.svg" width="47" height="56" alt="Link to download for iOS">
+            </a>
+          </li>
+          <li class="page__promo-market-item">
+            <a class="page__promo-links-item" href="#">
+              <img class="page__promo-links-img" src="img/logo-android.svg" width="43" height="47" alt="Link to download for Android">
+            </a>
+          </li>
+          <li class="page__promo-market-item">
+            <a class="page__promo-links-item" href="#">
+              <img class="page__promo-links-img" src="img/logo-microsoft.svg" width="44" height="41"  alt="Link to download for Windows">
+            </a>
+          </li>
+        </ul>
+        <p class="page__promo-legend">
+          Available for iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+        </p>
+      </div>
+    </div>
+  </div>
 
 </body>
 </html>
