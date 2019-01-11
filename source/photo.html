@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo</title>
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body class="page">
+
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+
+    <header class="page__header">
+      <div class="page__header-wrapper container">
+        <a class="page__header-logo logo" href="index.html">
+          <svg class="logo__img" width="75" height="22">
+            <use xlink:href="#icon-logo-pink-mobile"></use>
+          </svg>
+        </a>
+        <button class="page__header-nav-toggle nav-toggle">Menu</button>
+        <nav class="page__header-main-nav main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="index.html" class="main-nav__link">main</a></li>
+            <li class="main-nav__item"><span class="main-nav__link">photo</span></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__link">contest</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__link">html academy</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page__content">
+      <div class="page__content-header">
+        <h1 class="page__content-header-title">Users photos</h1>
+      </div>
+    </main>
+
+    <div class="page__content-invite">
+      <div class="page__content-invite-wrapper container">
+        <p class="page__content-invite-item">
+          Take a look at the photos that users post! See how missing yours?
+        </p>
+      </div>
+    </div>
+
+  </body>
+</html>
