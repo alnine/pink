@@ -6,170 +6,165 @@
     <title>Pink</title>
     <link rel="stylesheet" href="css/style.min.css">
   </head>
-  <body class="page">
+  <body>
 
     <div style="display:none">
       <include src="build/img/sprite.svg"></include>
     </div>
 
-    <header class="page__header">
-      <div class="page__header-wrapper container">
-        <div class="page__header-logo logo">
-          <svg class="logo__img" width="75" height="22">
-            <use xlink:href="#icon-logo-pink-mobile"></use>
-          </svg>
-        </div>
-        <button class="page__header-nav-toggle nav-toggle">Menu</button>
-        <nav class="page__header-main-nav main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><span href="#" class="main-nav__link">main</span></li>
-            <li class="main-nav__item"><a href="photo.html" class="main-nav__link">photo</a></li>
-            <li class="main-nav__item"><a href="#" class="main-nav__link">contest</a></li>
-            <li class="main-nav__item"><a href="#" class="main-nav__link">html academy</a></li>
-          </ul>
-        </nav>
-      </div>
+    <header class="page-header">
+      <a class="page-header__logo logo">
+        <svg class="logo__image" width="75" height="22">
+          <use xlink:href="#icon-logo-pink-mobile"></use>
+        </svg>
+      </a>
+      <button class="page-header__nav-toggle" type="button"><span class="visually-hidden">Menu</span></button>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__item-link">Main</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__item-link" href="photo.html">Photo</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__item-link" href="#">Contest</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
-    <main class="page__content">
-      <div class="page__content-header promo">
-        <div class="promo__wrapper container">
-          <div class="promo__info">
-            <a class="promo__download-btn" href="#">Download App</a>
-            <ul class="promo__market-list">
-              <li class="promo__market-item">
-                <a class="promo__market-link" href="#">
-                  <img class="promo__market-img" src="img/logo-apple.svg" width="47" height="56" alt="Link to download for iOS">
-                </a>
-              </li>
-              <li class="promo__market-item">
-                <a class="promo__links-item" href="#">
-                  <img class="promo__links-img" src="img/logo-android.svg" width="43" height="47" alt="Link to download for Android">
-                </a>
-              </li>
-              <li class="promo__market-item">
-                <a class="promo__links-item" href="#">
-                  <img class="promo__links-img" src="img/logo-microsoft.svg" width="44" height="41"  alt="Link to download for Windows">
-                </a>
-              </li>
-            </ul>
-            <p class="promo__legend">
-              Available for iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+    <main class="page-main">
+
+      <h1 class="page-main__title" hidden>Look at life otherwise!</h1>
+
+      <div class="page-main__promo promo">
+        <a class="promo__download-btn" href="#">Download App</a>
+        <ul class="promo__market-list">
+          <li class="promo__market-item">
+            <a class="promo__market-item-link" href="#">
+              <img class="promo__market-item-image" src="img/logo-apple.svg" width="47" height="56" alt="Link to download for iOS">
+            </a>
+          </li>
+          <li class="promo__market-item">
+            <a class="promo__market-item-link" href="#">
+              <img class="promo__market-item-image" src="img/logo-android.svg" width="43" height="47" alt="Link to download for Android">
+            </a>
+          </li>
+          <li class="promo__market-item">
+            <a class="promo__market-item-link" href="#">
+              <img class="promo__market-item-image" src="img/logo-microsoft.svg" width="44" height="41"  alt="Link to download for Windows">
+            </a>
+          </li>
+        </ul>
+        <p class="promo__legend">
+          Available for iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+        </p>
+      </div>
+
+      <p class="page-main__invite">
+        Are you tired of the monotony of a megalopolis?
+        <span class="page-main__invite-item-accent">We have that to offer to you!</span>
+      </p>
+
+      <div class="features">
+        <h2 class="visually-hidden">Features</h2>
+        <ul class="features__list">
+          <li class="features__item">
+            <h3 class="features__item-title">Improves mood</h3>
+            <p class="features__item-description">The application will allow you to defeat autumn sorrow and depression in just a few clicks!</p>
+          </li>
+          <li class="features__item">
+            <h3 class="features__item-title">Changes the world around</h3>
+            <p class="features__item-description">Take a picture and decorate it with a smiley or text label to enhance the effect</p>
+          </li>
+          <li class="features__item">
+            <h3 class="features__item-title">Makes new friends</h3>
+            <p class="features__item-description">Put likes, comment, share photos with friends and make new ones</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="feedback">
+        <h2 class="visually-hidden">Feedback</h2>
+        <div class="feedback__list">
+          <blockquote class="feedback__item">
+            <cite class="feedback__item-author">Nick Johnson</cite>
+            <p class="feedback__item-text">
+              &laquo;This application turned my world around and allowed me to take a fresh look at the usual gray things! And I met my future wife in the comments to the posted photos!&raquo;
             </p>
+          </blockquote>
+          <blockquote class="feedback__item">
+            <cite class="feedback__item-author">Nick Johnson</cite>
+            <p class="feedback__item-text">
+              &laquo;This application turned my world around and allowed me to take a fresh look at the usual gray things! And I met my future wife in the comments to the posted photos!&raquo;
+            </p>
+          </blockquote>
+          <blockquote class="feedback__item">
+            <cite class="feedback__item-author">Nick Johnson</cite>
+            <p class="feedback__item-text">
+              &laquo;This application turned my world around and allowed me to take a fresh look at the usual gray things! And I met my future wife in the comments to the posted photos!&raquo;
+            </p>
+          </blockquote>
+        </div>
+      </div>
+
+      <div class="tariffs">
+        <h2 class="visually-hidden">Tarrifs</h2>
+        <table class="tariffs__table">
+          <thead class="tariffs__plan-list">
+            <tr>
+              <th class="tariffs__plan-item">
+                <h3 class="tariffs__plan-item-name">standart1</h3>
+                <span class="tariffs__plan-item-price">1,99 usd</span>
+              </th>
+              <th class="tariffs__plan-item">
+                <h3 class="tariffs__plan-item-name">standart2</h3>
+                <span class="tariffs__plan-item-price">3,99 usd</span>
+              </th>
+              <th class="tariffs__plan-item">
+                <h3 class="tariffs__plan-item-name">standart3</h3>
+                <span class="tariffs__plan--itemprice">5,99 usd</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody class="tariffs__option-list">
+            <tr>
+              <td class="tariffs__option-item">pink filter</td>
+              <td class="tariffs__option-item">pink filter</td>
+              <td class="tariffs__option-item">pink filter</td>
+            </tr>
+            <tr>
+              <td class="tariffs__option-item">emoticons</td>
+              <td class="tariffs__option-item">emoticons</td>
+              <td class="tariffs__option-item">emoticons</td>
+            </tr>
+            <tr>
+              <td class="tariffs__option-item">comments</td>
+              <td class="tariffs__option-item">comments</td>
+              <td class="tariffs__option-item">comments</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="contact">
+        <h2 class="contact__title">
+          <span>Остались вопросы?</span>
+          <span>Свяжитесь с нами!</span>
+        </h2>
+        <div class="contact__list">
+          <div class="contact__item">
+            <h3 class="contact__item-title">Call us:</h3>
+            <a href="tel:+12345670000" class="contact__item-value">+1(234)567-00-00</a>
           </div>
-        </div>
-      </div>
-
-      <div class="page__content-invite">
-        <div class="page__content-invite-wrapper container">
-          <p class="page__content-invite-item">Are you tired of the monotony of a megalopolis?</p>
-          <p class="page__content-invite-item">We have that to offer to you!</p>
-        </div>
-      </div>
-
-      <div class="page__content-features features">
-        <div class="features__wrapper container">
-          <ul class="features__list">
-            <li class="features__item">
-              <h3 class="features__item-title">Improves mood</h3>
-              <p class="features__item-description">The application will allow you to defeat autumn sorrow and depression in just a few clicks!</p>
-            </li>
-            <li class="features__item">
-              <h3 class="features__item-title">Changes the world around</h3>
-              <p class="features__item-description">Take a picture and decorate it with a smiley or text label to enhance the effect</p>
-            </li>
-            <li class="features__item">
-              <h3 class="features__item-title">Makes new friends</h3>
-              <p class="features__item-description">Put likes, comment, share photos with friends and make new ones</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="page__content-feedback feedback">
-        <div class="feedback__wrapper container">
-          <div class="feedback__list">
-            <blockquote class="feedback__item">
-              <cite class="feedback__item-author">Nick Johnson</cite>
-              <p class="feedback__item-text">
-                &laquo;This application turned my world around and allowed me to take a fresh look at the usual gray things! And I met my future wife in the comments to the posted photos!&raquo;
-              </p>
-            </blockquote>
-            <blockquote class="feedback__item">
-              <cite class="feedback__item-author">Nick Johnson</cite>
-              <p class="feedback__item-text">
-                &laquo;This application turned my world around and allowed me to take a fresh look at the usual gray things! And I met my future wife in the comments to the posted photos!&raquo;
-              </p>
-            </blockquote>
-            <blockquote class="feedback__item">
-              <cite class="feedback__item-author">Nick Johnson</cite>
-              <p class="feedback__item-text">
-                &laquo;This application turned my world around and allowed me to take a fresh look at the usual gray things! And I met my future wife in the comments to the posted photos!&raquo;
-              </p>
-            </blockquote>
+          <div class="contact__item">
+            <h3 class="contact__item-title">Write us:</h3>
+            <a href="mailto:mail@pink.com" class="contact__item-value">mail@pink.com</a>
           </div>
-        </div>
-      </div>
-
-      <div class="page__content-tariffs tariffs">
-        <div class="tariffs__wrapper container">
-          <table class="tariffs__table">
-            <thead class="tariffs__plan-list">
-              <tr>
-                <th class="tariffs__plan-item">
-                  <h3 class="tariffs__plan-item-name">standart1</h3>
-                  <span class="tariffs__plan-item-price">1,99 usd</span>
-                </th>
-                <th class="tariffs__plan-item">
-                  <h3 class="tariffs__plan-item-name">standart2</h3>
-                  <span class="tariffs__plan-item-price">3,99 usd</span>
-                </th>
-                <th class="tariffs__plan-item">
-                  <h3 class="tariffs__plan-item-name">standart3</h3>
-                  <span class="tariffs__plan--itemprice">5,99 usd</span>
-                </th>
-              </tr>
-            </thead>
-            <tbody class="tariffs__option-list">
-              <tr>
-                <td class="tariffs__option-item">pink filter</td>
-                <td class="tariffs__option-item">pink filter</td>
-                <td class="tariffs__option-item">pink filter</td>
-              </tr>
-              <tr>
-                <td class="tariffs__option-item">emoticons</td>
-                <td class="tariffs__option-item">emoticons</td>
-                <td class="tariffs__option-item">emoticons</td>
-              </tr>
-              <tr>
-                <td class="tariffs__option-item">comments</td>
-                <td class="tariffs__option-item">comments</td>
-                <td class="tariffs__option-item">comments</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      <div class="page__contact contact">
-        <div class="contact__wrapper container">
-          <h2 class="contact__title">
-            <span>Остались вопросы?</span>
-            <span>Свяжитесь с нами!</span>
-          </h2>
-          <div class="contact__list">
-            <div class="contact__item">
-              <h3 class="contact__item-title">Call us:</h3>
-              <a href="tel:+12345670000" class="contact__item-value">+1(234)567-00-00</a>
-            </div>
-            <div class="contact__item">
-              <h3 class="contact__item-title">Write us:</h3>
-              <a href="mailto:mail@pink.com" class="contact__item-value">mail@pink.com</a>
-            </div>
-            <div class="contact__item">
-              <h3 class="contact__item-title">Come to visit:</h3>
-              <span class="contact__item-value">1 Gojo Plz #500, Akron</span>
-            </div>
+          <div class="contact__item">
+            <h3 class="contact__item-title">Come to visit:</h3>
+            <span class="contact__item-value">1 Gojo Plz #500, Akron</span>
           </div>
         </div>
         <div class="contact__map">
