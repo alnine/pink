@@ -217,6 +217,38 @@
         Overshadow all of them! Share everything that has accumulated in the phone!
       </p>
 
+      <div class="editor">
+        <form class="editor__form" action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data">
+          <div class="editor__form-preview">
+            <img class="editor__form-preview-image" src="img/photo-demo-mobile@1x.jpg" width="280" height="374" alt="Preview result of photo editor">
+          </div>
+          <div class="editor__form-options">
+            <label class="editor__form-option">
+              <svg class="editor__form-option-img" width="44" height="44">
+                <use xlink:href="#icon-crop"></use>
+              </svg>
+              <input class="editor__form-option-slider" name="crop" type="range" min="0" max="100" step="1" value="80">
+            </label>
+            <label class="editor__form-option">
+              <svg class="editor__form-option-img" width="48" height="43">
+                <use xlink:href="#icon-fill"></use>
+              </svg>
+              <input class="editor__form-option-slider" name="fill" type="range" min="0" max="100" step="1" value="20">
+            </label>
+            <label class="editor__form-option">
+              <svg class="editor__form-option-img" width="32" height="32">
+                <use xlink:href="#icon-contrast"></use>
+              </svg>
+              <input class="editor__form-option-slider" name="contrast" type="range" min="0" max="100" step="1" value="50">
+            </label>
+          </div>
+          <div class="editor__form-control">
+            <button class="btn" type="submit">Post it</button>
+            <button class="btn" type="reset">Cancel</button>
+          </div>
+        </form>
+      </div>
+
     </main>
 
   </body>
