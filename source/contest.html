@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contest</title>
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body class="page">
+
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+
+    <header class="page-header">
+      <a class="page-header__logo logo" href="index.html">
+        <svg class="logo__image" width="75" height="22">
+          <use xlink:href="#icon-logo-pink-mobile"></use>
+        </svg>
+      </a>
+      <button class="page-header__nav-toggle" type="button"><span class="visually-hidden">Menu</span></button>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__item-link" href="index.html">Main</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__item-link" href="photo.html">Photo</a>
+          </li>
+          <li class="main-nav__item  main-nav__item--active">
+            <a class="main-nav__item-link">Contest</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-main">
+
+      <h1 class="page-main__title">Competition for the most insane trip with Pink</h1>
+
+      <p class="page-main__invite">
+        Share your story and get a chance to win a valuable prize - 1000 miles to your bonus card! Please fill in the form below:
+      </p>
+
+      <form class="contest-form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="contest-form__set text-set">
+          <label class="text-set__item">
+            <span class="text-set__item-caption">Surname:</span>
+            <input class="text-set__item-field" type="text" name="surname" placeholder="Enter your surname *" required>
+          </label>
+          <label class="text-set__item">
+            <span class="text-set__item-caption">Name:</span>
+            <input class="text-set__field" type="text" name="name" placeholder="Enter your name *" required>
+          </label>
+        </fieldset>
+        <fieldset class="contest-form__set checkbox-set">
+          <legend class="contest-form__set-title">Your crazy achievements in travel</legend>
+          <label class="checkbox-set__item">
+            <input class="checkbox-set__item-field" type="checkbox" name="achievements" value="selfie" checked>
+            <span class="checkbox-set__item-caption">Take a selfie with a shark</span>
+          </label>
+          <label class="checkbox-set__item">
+            <input class="checkbox-set__item-field" type="checkbox" name="achievements" value="burned" checked>
+            <span class="checkbox-set__item-caption">Burned on the beach</span>
+          </label>
+          <label class="checkbox-set__item">
+            <input class="checkbox-set__item-field" type="checkbox" name="achievements" value="norris">
+            <span class="checkbox-set__item-caption">Saw Chuck Norris</span>
+          </label>
+          <label class="checkbox-set__item">
+            <input class="checkbox-set__item-field" type="checkbox" name="achievements" value="souvenirs">
+            <span class="checkbox-set__item-caption">Bought souvenirs</span>
+          </label>
+          <label class="checkbox-set__item">
+            <input class="checkbox-set__item-field" type="checkbox" name="achievements" value="tower" checked>
+            <span class="checkbox-set__item-caption">Kept the tower</span>
+          </label>
+          <label class="checkbox-set__item">
+            <input class="checkbox-set__item-field" type="checkbox" name="achievements" value="hotel">
+            <span class="checkbox-set__item-caption">Destroyed the hotel</span>
+          </label>
+        </fieldset>
+        <fieldset class="contest-form__set text-set">
+          <label class="text-set__item">
+            <span class="text-set__item-caption">Phone number</span>
+            <input class="text-set__item-field" type="tel" name="phone" placeholder="Number, please">
+          </label>
+          <label class="text-set__item">
+            <span class="text-set__item-caption">Email</span>
+            <input class="text-set__field" type="email" name="email" placeholder="Enter your email *" required>
+          </label>
+        </fieldset>
+        <fieldset class="contest-form__set radio-set">
+          <legend class="contest-form__set-title">With which application traveled?</legend>
+          <label class="radio-set__item">
+            <input class="radio-set__item-field" type="radio" name="application" value="ios" checked>
+            <span class="radio-set__item-caption">Pink for iOS</span>
+          </label>
+          <label class="radio-set__item">
+            <input class="radio-set__item-field" type="radio" name="application" value="android">
+            <span class="radio-set__item-caption">Pink for Android</span>
+          </label>
+          <label class="radio-set__item">
+            <input class="radio-set__item-field" type="radio" name="application" value="windows">
+            <span class="radio-set__item-caption">Windows Phone</span>
+          </label>
+        </fieldset>
+        <fieldset class="contest-form__set">
+          <legend class="contest-form__set-title">Describe your emotions</legend>
+          <textarea class="contest-form__story" name="story" cols="20" rows="7" placeholder="Feel free to expressions"></textarea>
+        </fieldset>
+        <button class="contest-form__btn" type="submit">Submit</button>
+        <small class="contest-form__legend">* &ndash; required fields</small>
+      </form>
+    </main>
+
+    <footer class="page-footer">
+      <a class="page-footer__logo logo" href="index.html">
+        <svg class="logo__image" width="147" height="40">
+          <use xlink:href="#icon-logo-pink-blue-mobile"></use>
+        </svg>
+      </a>
+      <div class="social">
+        <a class="social__item" href="#">
+          <img class="social__item-image" width="18" height="14" src="img/logo-twitter.svg" alt="Link to twitter">
+        </a>
+        <a class="social__item" href="#">
+          <img class="social__item-image" width="9" height="18" src="img/logo-facebook.svg" alt="Link to facebook">
+        </a>
+        <a class="social__item" href="#">
+          <img class="social__item-image" width="15" height="13" src="img/logo-youtube.svg" alt="Link to youtube">
+        </a>
+      </div>
+      <div class="copyright">
+        <span class="copyright__text">Developed by</span>
+        <a class="copyright__link" href="https://htmlacademy.ru/profile/id162247" target="_blank">
+          <svg class="copyright__link-image" width="27" height="34">
+            <use xlink:href="#icon-logo-htmlacademy"></use>
+          </svg>
+        </a>
+      </div>
+    </footer>
+
+  </body>
+</html>
