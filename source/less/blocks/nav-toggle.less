@@ -1,0 +1,26 @@
+.nav-toggle {
+  display: block;
+  padding: 0;
+
+  background: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  &--closed {
+    width: 50px;
+    height: 24px;
+
+    background-image: url("../img/nav-toggle-burger.svg");
+  }
+
+  &--opened {
+    width: 24px;
+    height: 23px;
+
+    background-image: url("../img/nav-toggle-cross.svg");
+  }
+}
