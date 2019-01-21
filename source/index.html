@@ -41,28 +41,27 @@
       <h1 class="visually-hidden">More about the application</h1>
 
       <section class="page-main__promo promo">
-        <h2 class="promo__title">Look at life otherwise!</h2>
-        <a class="promo__download-btn" href="#">Download App</a>
-        <ul class="promo__market-list">
-          <li class="promo__market-item">
-            <a class="promo__market-item-link" href="#">
-              <img class="promo__market-item-image" src="img/logo-apple.svg" width="47" height="56" alt="Link to download for iOS">
-            </a>
-          </li>
-          <li class="promo__market-item">
-            <a class="promo__market-item-link" href="#">
-              <img class="promo__market-item-image" src="img/logo-android.svg" width="43" height="47" alt="Link to download for Android">
-            </a>
-          </li>
-          <li class="promo__market-item">
-            <a class="promo__market-item-link" href="#">
-              <img class="promo__market-item-image" src="img/logo-microsoft.svg" width="44" height="41"  alt="Link to download for Windows">
-            </a>
-          </li>
-        </ul>
-        <p class="promo__legend">
-          Available for iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-        </p>
+        <div class="promo__container container">
+          <h2 class="promo__title">Look at life otherwise!</h2>
+          <article class="promo__links">
+            <h3 class="visually-hidden">Links to download application</h3>
+            <a class="btn promo__btn btn--white" href="#">Download App</a>
+            <ul class="promo__market-list">
+              <li class="promo__market-item">
+                <a class="promo__market-link promo__market-link--apple" href="#" aria-label="Link to Apple Store">Apple Store</a>
+              </li>
+              <li class="promo__market-item">
+                <a class="promo__market-link promo__market-link--android" href="#" aria-label="Link to Android Market">Android Market</a>
+              </li>
+              <li class="promo__market-item">
+                <a class="promo__market-link promo__market-link--windows" href="#" aria-label="Link to Windows Market">Windows Market</a>
+              </li>
+            </ul>
+            <p class="promo__legend">
+              Available for iPhone, iPad, Android, Windows&nbsp;Phone, OS X, Windows 8
+            </p>
+          </article>
+        </div>
       </section>
 
       <p class="page-main__invite">
