@@ -125,41 +125,70 @@
 
       <section class="page-main__tariffs tariffs">
         <h2 class="visually-hidden">Tarrifs</h2>
-        <table class="tariffs__table">
-          <thead class="tariffs__plan-list">
-            <tr>
-              <th class="tariffs__plan-item">
-                <span class="tariffs__plan-item-name">standart1</span>
-                <span class="tariffs__plan-item-price">1,99 usd</span>
-              </th>
-              <th class="tariffs__plan-item">
-                <span class="tariffs__plan-item-name">standart2</span>
-                <span class="tariffs__plan-item-price">3,99 usd</span>
-              </th>
-              <th class="tariffs__plan-item">
-                <span class="tariffs__plan-item-name">standart3</span>
-                <span class="tariffs__plan--itemprice">5,99 usd</span>
-              </th>
-            </tr>
-          </thead>
-          <tbody class="tariffs__option-list">
-            <tr>
-              <td class="tariffs__option-item">pink filter</td>
-              <td class="tariffs__option-item">pink filter</td>
-              <td class="tariffs__option-item">pink filter</td>
-            </tr>
-            <tr>
-              <td class="tariffs__option-item">emoticons</td>
-              <td class="tariffs__option-item">emoticons</td>
-              <td class="tariffs__option-item">emoticons</td>
-            </tr>
-            <tr>
-              <td class="tariffs__option-item">comments</td>
-              <td class="tariffs__option-item">comments</td>
-              <td class="tariffs__option-item">comments</td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="tariffs__container container">
+          <table class="tariffs__table">
+            <thead class="tariffs__plan-list">
+              <tr>
+                <th class="tariffs__plan-item">
+                  <span class="tariffs__plan-item-name">base</span>
+                  <span class="tariffs__plan-item-price">1,99 usd</span>
+                </th>
+                <th class="tariffs__plan-item">
+                  <span class="tariffs__plan-item-name">standart</span>
+                  <span class="tariffs__plan-item-price">3,99 usd</span>
+                </th>
+                <th class="tariffs__plan-item">
+                  <span class="tariffs__plan-item-name">unlim</span>
+                  <span class="tariffs__plan--itemprice">5,99 usd</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody class="tariffs__option-list">
+              <tr>
+                <td class="tariffs__option-item">
+                  pink filter
+                  <span class="tariffs__option-availability tariffs__option-availability--yes">yes</span>
+                </td>
+                <td class="tariffs__option-item">
+                  pink filter
+                  <span class="tariffs__option-availability tariffs__option-availability--yes">yes</span>
+                </td>
+                <td class="tariffs__option-item">
+                  pink filter
+                  <span class="tariffs__option-availability tariffs__option-availability--yes">yes</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="tariffs__option-item">
+                  emoticons
+                  <span class="tariffs__option-availability tariffs__option-availability--no">no</span>
+                </td>
+                <td class="tariffs__option-item">
+                  emoticons
+                  <span class="tariffs__option-availability tariffs__option-availability--yes">yes</span>
+                </td>
+                <td class="tariffs__option-item">
+                  emoticons
+                  <span class="tariffs__option-availability tariffs__option-availability--yes">yes</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="tariffs__option-item">
+                  comments
+                  <span class="tariffs__option-availability tariffs__option-availability--no">no</span>
+                </td>
+                <td class="tariffs__option-item">
+                  comments
+                  <span class="tariffs__option-availability tariffs__option-availability--no">no</span>
+                </td>
+                <td class="tariffs__option-item">
+                  comments
+                  <span class="tariffs__option-availability tariffs__option-availability--yes">yes</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
 
       <section class="page-main__contact contact">
