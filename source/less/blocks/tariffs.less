@@ -5,12 +5,13 @@
 
 .tariffs__container {
   width: 100%;
-  box-sizing: content-box;
+  padding: 0;
   overflow: hidden;
 }
 
 .tariffs__table {
   width: 261.25%;
+  margin-left: 20px;
   border-collapse: collapse;
 }
 
@@ -18,49 +19,58 @@
 .tariffs__option-item {
   width: 33.333333%;
   padding: 15px 20px;
+
   border: 2px solid #e5e5e5;
 }
 
 .tariffs__plan-item {
-  background-color: @bg-dark;
   color: @light-font-color;
+
+  background-color: @bg-dark;
 }
 
 .tariffs__plan-item-name {
   display: block;
+
+  font-weight: @bold;
   font-size: 18px;
   line-height: 30px;
-  font-weight: @bold;
   text-transform: uppercase;
 }
 
 .tariffs__plan-item-price {
   display: block;
+
+  font-weight: @light;
   font-size: 24px;
   line-height: 30px;
-  font-weight: @light;
   text-transform: uppercase;
 }
 
 .tariffs__option-item {
   position: relative;
-  background-color: @bg-light;
+
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
+
+  background-color: @bg-light;
 }
 
 .tariffs__option-availability {
-  display: block;
   position: absolute;
   top: 50%;
   right: 20px;
-  transform: translateY(-50%);
+
+  display: block;
   width: 31px;
   height: 26px;
+
+  font-size: 0;
+
   background-repeat: no-repeat;
   background-position: center center;
-  font-size: 0;
+  transform: translateY(-50%);
 
   &--yes {
     background-image: url("../img/mark-yes.svg");
