@@ -1,0 +1,72 @@
+.tariffs {
+  padding-top: 85px;
+  padding-bottom: 45px;
+}
+
+.tariffs__container {
+  width: 100%;
+  box-sizing: content-box;
+  overflow: hidden;
+}
+
+.tariffs__table {
+  width: 261.25%;
+  border-collapse: collapse;
+}
+
+.tariffs__plan-item,
+.tariffs__option-item {
+  width: 33.333333%;
+  padding: 15px 20px;
+  border: 2px solid #e5e5e5;
+}
+
+.tariffs__plan-item {
+  background-color: @bg-dark;
+  color: @light-font-color;
+}
+
+.tariffs__plan-item-name {
+  display: block;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: @bold;
+  text-transform: uppercase;
+}
+
+.tariffs__plan-item-price {
+  display: block;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: @light;
+  text-transform: uppercase;
+}
+
+.tariffs__option-item {
+  position: relative;
+  background-color: @bg-light;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.tariffs__option-availability {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  width: 31px;
+  height: 26px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-size: 0;
+
+  &--yes {
+    background-image: url("../img/mark-yes.svg");
+  }
+
+  &--no {
+    background-image: url("../img/mark-no.svg");
+  }
+}
