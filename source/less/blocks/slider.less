@@ -1,19 +1,11 @@
-.slider {
-  overflow: hidden;
-}
-
 .slider__radio-btn {
   display: none;
 }
 
 .slider__list {
   position: relative;
-  transition-duration: 1s;
 
-  &--feedback {
-    display: flex;
-    width: 300%;
-  }
+  transition-duration: 1s;
 }
 
 .slider__control {
@@ -42,14 +34,14 @@
   opacity: 1;
 }
 
-#slide-feedback-1:checked ~ .slider__list--feedback {
+#slide-feedback-1:checked ~ .slider__list {
   transform: translateX(0%);
 }
 
-#slide-feedback-2:checked ~ .slider__list--feedback {
+#slide-feedback-2:checked ~ .slider__list {
   transform: translateX(-33.3333%);
 }
 
-#slide-feedback-3:checked ~ .slider__list--feedback {
+#slide-feedback-3:checked ~ .slider__list {
   transform: translateX(-66.6666%);
 }
