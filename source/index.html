@@ -94,9 +94,9 @@
       <section class="page-main__feedback feedback slider">
         <h2 class="visually-hidden">Feedback</h2>
         <div class="feedback__container container">
-          <input class="slider__radio-btn" name="feedback" type="radio" id="slide-feedback-1" checked>
-          <input class="slider__radio-btn" name="feedback" type="radio" id="slide-feedback-2">
-          <input class="slider__radio-btn" name="feedback" type="radio" id="slide-feedback-3">
+          <input class="slider__radio-btn" name="feedback" type="radio" id="slide-feedback-1" checked hidden>
+          <input class="slider__radio-btn" name="feedback" type="radio" id="slide-feedback-2" hidden>
+          <input class="slider__radio-btn" name="feedback" type="radio" id="slide-feedback-3" hidden>
           <div class="feedback__list slider__list">
             <blockquote class="feedback__item">
               <cite class="feedback__item-author">Nick Johnson1</cite>
@@ -125,10 +125,13 @@
         </div>
       </section>
 
-      <section class="page-main__tariffs tariffs">
+      <section class="page-main__tariffs tariffs slider">
         <h2 class="visually-hidden">Tarrifs</h2>
         <div class="tariffs__container container">
-          <table class="tariffs__table">
+          <input class="slider__radio-btn" name="tariff" type="radio" id="slide-tariff-1" hidden>
+          <input class="slider__radio-btn" name="tariff" type="radio" id="slide-tariff-2" checked hidden>
+          <input class="slider__radio-btn" name="tariff" type="radio" id="slide-tariff-3" hidden>
+          <table class="tariffs__table slider__list">
             <thead class="tariffs__plan-list">
               <tr>
                 <th class="tariffs__plan-item">
@@ -190,6 +193,11 @@
               </tr>
             </tbody>
           </table>
+          <div class="tariffs__slider-control slider__control">
+            <label class="slider__control-item" for="slide-tariff-1"></label>
+            <label class="slider__control-item" for="slide-tariff-2"></label>
+            <label class="slider__control-item" for="slide-tariff-3"></label>
+          </div>
         </div>
       </section>
 
