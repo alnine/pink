@@ -1,0 +1,26 @@
+.decor__triangle {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    display: block;
+    height: 35px;
+
+    background-image: url("../img/triangle-footer.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+
+  &--right::before {
+    background-size: 200% 100%;
+  }
+
+  &--regular::before {
+    background-size: 100% 100%;
+  }
+}
