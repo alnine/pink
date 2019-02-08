@@ -6,112 +6,125 @@
     <title>Contest</title>
     <link rel="stylesheet" href="css/style.min.css">
   </head>
-  <body class="page">
+  <body>
 
     <div style="display:none">
       <include src="build/img/sprite.svg"></include>
     </div>
 
     <header class="page-header">
-      <a class="page-header__logo logo" href="index.html">
-        <svg class="logo__image" width="75" height="22">
-          <use xlink:href="#icon-logo-pink-mobile"></use>
-        </svg>
-      </a>
-      <button class="page-header__nav-toggle" type="button"><span class="visually-hidden">Menu</span></button>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__item-link" href="index.html">Main</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__item-link" href="photo.html">Photo</a>
-          </li>
-          <li class="main-nav__item  main-nav__item--active">
-            <a class="main-nav__item-link">Contest</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="page-header__container container">
+        <a class="page-header__logo logo" href="index.html">
+          <svg class="logo__image" width="75" height="22">
+            <use xlink:href="#icon-logo-pink-mobile"></use>
+          </svg>
+        </a>
+        <button class="page-header__nav-toggle nav-toggle nav-toggle--closed" type="button"><span class="visually-hidden">Menu</span></button>
+        <nav class="page-header__main-nav main-nav main-nav--closed">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="index.html">Main</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="photo.html">Photo</a>
+            </li>
+            <li class="main-nav__item  main-nav__item--active">
+              <a class="main-nav__item-link">Contest</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main class="page-main">
 
-      <h1 class="page-main__title">Competition for the most insane trip with Pink</h1>
+      <h1 class="page-main__title">Competition for the&nbsp;most&nbsp;insane trip&nbsp;with&nbsp;Pink</h1>
 
       <form class="contest-form" action="https://echo.htmlacademy.ru" method="post">
-        <h2 class="contest-form__invite">
-          Share your story and get a chance to win a valuable prize - 1000 miles to your bonus card! Please fill in the form below:
-        </h2>
-        <fieldset class="contest-form__set text-set">
-          <legend class="visually-hidden">Participant</legend>
-          <label class="text-set__item">
-            <span class="text-set__item-caption">Surname:</span>
-            <input class="text-set__item-field" type="text" name="surname" placeholder="Enter your surname *" required>
-          </label>
-          <label class="text-set__item">
-            <span class="text-set__item-caption">Name:</span>
-            <input class="text-set__field" type="text" name="name" placeholder="Enter your name *" required>
-          </label>
-        </fieldset>
-        <fieldset class="contest-form__set checkbox-set">
-          <legend class="contest-form__set-title">Your crazy achievements in travel</legend>
-          <label class="checkbox-set__item">
-            <input class="checkbox-set__item-field" type="checkbox" name="achievements" value="selfie" checked>
-            <span class="checkbox-set__item-caption">Take a selfie with a shark</span>
-          </label>
-          <label class="checkbox-set__item">
-            <input class="checkbox-set__item-field" type="checkbox" name="achievements" value="burned" checked>
-            <span class="checkbox-set__item-caption">Burned on the beach</span>
-          </label>
-          <label class="checkbox-set__item">
-            <input class="checkbox-set__item-field" type="checkbox" name="achievements" value="norris">
-            <span class="checkbox-set__item-caption">Saw Chuck Norris</span>
-          </label>
-          <label class="checkbox-set__item">
-            <input class="checkbox-set__item-field" type="checkbox" name="achievements" value="souvenirs">
-            <span class="checkbox-set__item-caption">Bought souvenirs</span>
-          </label>
-          <label class="checkbox-set__item">
-            <input class="checkbox-set__item-field" type="checkbox" name="achievements" value="tower" checked>
-            <span class="checkbox-set__item-caption">Kept the tower</span>
-          </label>
-          <label class="checkbox-set__item">
-            <input class="checkbox-set__item-field" type="checkbox" name="achievements" value="hotel">
-            <span class="checkbox-set__item-caption">Destroyed the hotel</span>
-          </label>
-        </fieldset>
-        <fieldset class="contest-form__set text-set">
-          <legend class="contest-form__set-title">Contact Information</legend>
-          <label class="text-set__item">
-            <span class="text-set__item-caption">Phone number</span>
-            <input class="text-set__item-field" type="tel" name="phone" placeholder="Number, please">
-          </label>
-          <label class="text-set__item">
-            <span class="text-set__item-caption">Email</span>
-            <input class="text-set__field" type="email" name="email" placeholder="Enter your email *" required>
-          </label>
-        </fieldset>
-        <fieldset class="contest-form__set radio-set">
-          <legend class="contest-form__set-title">With which application traveled?</legend>
-          <label class="radio-set__item">
-            <input class="radio-set__item-field" type="radio" name="application" value="ios" checked>
-            <span class="radio-set__item-caption">Pink for iOS</span>
-          </label>
-          <label class="radio-set__item">
-            <input class="radio-set__item-field" type="radio" name="application" value="android">
-            <span class="radio-set__item-caption">Pink for Android</span>
-          </label>
-          <label class="radio-set__item">
-            <input class="radio-set__item-field" type="radio" name="application" value="windows">
-            <span class="radio-set__item-caption">Windows Phone</span>
-          </label>
-        </fieldset>
-        <fieldset class="contest-form__set">
-          <legend class="contest-form__set-title">Describe your emotions</legend>
-          <textarea class="contest-form__story" name="story" cols="20" rows="7" placeholder="Feel free to expressions"></textarea>
-        </fieldset>
-        <button class="contest-form__btn" type="submit">Submit</button>
-        <small class="contest-form__legend">* &ndash; required fields</small>
+        <div class="contest-form__container container">
+          <h2 class="contest-form__invite">
+            Share your story and get a&nbsp;chance to&nbsp;win a&nbsp;valuable prize&nbsp;&mdash; 1000 miles to&nbsp;your bonus card!
+            <span class="contest-form__invite-to-fill-in">Please fill in&nbsp;the form below:</span>
+          </h2>
+          <fieldset class="contest-form__set text-set">
+            <legend class="visually-hidden">Participant</legend>
+            <ul class="text-set__list">
+              <li class="text-set__item">
+                <label class="text-set__item-caption" for="surname">Surname:</label>
+                <input class="text-set__item-field" type="text" name="surname" id="surname" placeholder="Enter your surname *" required>
+              </li>
+              <li class="text-set__item">
+                <label class="text-set__item-caption" for="name">Name:</label>
+                <input class="text-set__item-field" type="text" name="name" id="name" placeholder="Enter your name *" required>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="contest-form__set checkbox-set">
+            <legend class="contest-form__set-title">Your crazy achievements in&nbsp;travel</legend>
+            <ul class="checkbox-set__list">
+              <li class="checkbox-set__item">
+                <input class="checkbox-set__item-field visually-hidden" type="checkbox" name="achievements" id="selfie" value="selfie" checked>
+                <label class="checkbox-set__item-caption" for="selfie">Take a selfie with a shark</label>
+              </li>
+              <li class="checkbox-set__item">
+                <input class="checkbox-set__item-field visually-hidden" type="checkbox" name="achievements" id="burned" value="burned" checked>
+                <label class="checkbox-set__item-caption" for="burned">Burned on the beach</label>
+              </li>
+              <li class="checkbox-set__item">
+                <input class="checkbox-set__item-field visually-hidden" type="checkbox" name="achievements" id="norris" value="norris">
+                <label class="checkbox-set__item-caption" for="norris">Saw Chuck Norris</label>
+              </li>
+              <li class="checkbox-set__item">
+                <input class="checkbox-set__item-field visually-hidden" type="checkbox" name="achievements" id="souvenirs" value="souvenirs">
+                <label class="checkbox-set__item-caption" for="souvenirs">Bought souvenirs</label>
+              </li>
+              <li class="checkbox-set__item">
+                <input class="checkbox-set__item-field visually-hidden" type="checkbox" name="achievements" id="tower" value="tower" checked>
+                <label class="checkbox-set__item-caption" for="tower">Kept the tower</label>
+              </li>
+              <li class="checkbox-set__item">
+                <input class="checkbox-set__item-field visually-hidden" type="checkbox" name="achievements" id="hotel" value="hotel">
+                <label class="checkbox-set__item-caption" for="hotel">Destroyed the hotel</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="contest-form__set text-set">
+            <legend class="contest-form__set-title contest-form__set-title-contact">Contact Information</legend>
+            <ul class="text-set__list">
+              <li class="text-set__item">
+                <label class="text-set__item-caption" for="phone">Phone number</label>
+                <input class="text-set__item-field" type="tel" name="phone" id="phone" placeholder="Number, please">
+              </li>
+              <li class="text-set__item">
+                <label class="text-set__item-caption" for="email">Email</label>
+                <input class="text-set__item-field" type="email" name="email" id="email" placeholder="Enter your email *" required>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="contest-form__set radio-set">
+            <legend class="contest-form__set-title">With which application traveled?</legend>
+            <ul class="radio-set__list">
+              <li class="radio-set__item">
+                <input class="radio-set__item-field visually-hidden" type="radio" name="application" id="ios" value="ios" checked>
+                <label class="radio-set__item-caption" for="ios">Pink for iOS</label>
+              </li>
+              <li class="radio-set__item">
+                <input class="radio-set__item-field visually-hidden" type="radio" name="application" id="android" value="android">
+                <label class="radio-set__item-caption" for="android">Pink for Android</label>
+              </li>
+              <li class="radio-set__item">
+                <input class="radio-set__item-field visually-hidden" type="radio" name="application" id="windows" value="windows">
+                <label class="radio-set__item-caption" for="windows">Windows Phone</label>
+              </li>
+            </ul>
+          </fieldset>
+          <div class="contest-form__set message-set">
+            <label class="contest-form__set-title message-set__title" for="message">Describe your emotions</label>
+            <textarea class="message-set__area" name="message" id="message" cols="20" rows="5" placeholder="Feel free to expressions"></textarea>
+          </div>
+          <button class="contest-form__btn btn btn--default" type="submit">Submit</button>
+          <small class="contest-form__legend"><span class="legend-symbol">&#42;</span> &mdash; required fields</small>
+        </div>
       </form>
     </main>
 
