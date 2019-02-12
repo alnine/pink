@@ -250,37 +250,43 @@
         </p>
       </section>
 
-      <section class="editor">
+      <section class="page-main__editor editor">
         <h2 class="visually-hidden">Photo editor</h2>
-        <form class="editor__form" action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data">
-          <div class="editor__form-preview">
-            <img class="editor__form-preview-image" src="img/photo-demo-mobile@1x.jpg" width="280" height="374" alt="Preview result of photo editor">
-          </div>
-          <section class="editor__form-options">
-            <h3 class="visually-hidden">Editor options</h3>
-            <label class="editor__form-option">
-              <svg class="editor__form-option-img" width="44" height="44">
-                <use xlink:href="#icon-crop"></use>
-              </svg>
-              <input class="editor__form-option-slider" name="crop" type="range" min="0" max="100" step="1" value="80">
-            </label>
-            <label class="editor__form-option">
-              <svg class="editor__form-option-img" width="48" height="43">
-                <use xlink:href="#icon-fill"></use>
-              </svg>
-              <input class="editor__form-option-slider" name="fill" type="range" min="0" max="100" step="1" value="20">
-            </label>
-            <label class="editor__form-option">
-              <svg class="editor__form-option-img" width="32" height="32">
-                <use xlink:href="#icon-contrast"></use>
-              </svg>
-              <input class="editor__form-option-slider" name="contrast" type="range" min="0" max="100" step="1" value="50">
-            </label>
-          </section>
-          <section class="editor__form-control">
+        <form class="editor__form container" action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data">
+          <img class="editor__img-preview" src="img/photo-demo-mobile@1x.jpg" width="280" height="374" alt="Preview result of photo editor">
+          <fieldset class="editor__tools">
+            <legend class="visually-hidden">Editor tools</legend>
+            <ul class="editor__tools-list">
+              <li class="editor__tools-item">
+                <input class="editor__item-control range" id="crop" name="crop" type="range" min="0" max="100" step="1" value="80">
+                <label class="editor__item-caption" for="crop">
+                  <svg class="editor__item-caption-img editor__item-caption-img--crop" width="44" height="44">
+                    <use xlink:href="#icon-crop"></use>
+                  </svg>
+                </label>
+              </li>
+              <li class="editor__tools-item">
+                <input class="editor__item-control range" id="fill" name="fill" type="range" min="0" max="100" step="1" value="20">
+                <label class="editor__item-caption" for="fill">
+                  <svg class="editor__item-caption-img editor__item-caption-img--fill" width="48" height="43">
+                    <use xlink:href="#icon-fill"></use>
+                  </svg>
+                </label>
+              </li>
+              <li class="editor__tools-item">
+                <input class="editor__item-control range" id="contrast" name="contrast" type="range" min="0" max="100" step="1" value="50">
+                <label class="editor__item-caption" for="contrast">
+                  <svg class="editor__item-caption-img editor__item-caption-img--contrast" width="32" height="32">
+                    <use xlink:href="#icon-contrast"></use>
+                  </svg>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <section class="editor__options">
             <h3 class="visually-hidden">Editor controls</h3>
-            <button class="btn" type="submit">Post it</button>
-            <button class="btn" type="reset">Cancel</button>
+            <button class="editor__options-btn btn btn--round btn--round--bright" type="submit">Post it</button>
+            <button class="editor__options-btn btn btn--disabled btn--round" type="reset">Cancel</button>
           </section>
         </form>
       </section>
