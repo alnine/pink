@@ -1,20 +1,35 @@
 .promo {
-  padding-top: 314px;
+  position: relative;
 
-  background-image: url("../img/hand-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-position: top right;
+  padding-top: 396px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 82px;
+    left: 50%;
+
+    display: block;
+    width: 320px;
+    height: 314px;
+
+    background-image: url("../img/hand-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: -153px 0;
+    transform: translateX(-50%);
+  }
 }
 
 .promo__title {
   display: none;
 }
 
-.promo__links {
+.promo__banner {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 28px;
+  padding-top: 28px;
+  padding-bottom: 30px;
 }
 
 .promo__btn {
@@ -62,8 +77,9 @@
 .promo__legend {
   margin: 0;
   padding: 0;
+
+  font-weight: @font-light;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
-  font-weight: @font-light;
 }
