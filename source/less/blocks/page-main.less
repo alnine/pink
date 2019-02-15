@@ -57,9 +57,14 @@
   background-color: @color-light;
 }
 
+.page-main__research {
+  display: none;
+}
+
 @media (min-width: @tablet) {
   .page-main {
     padding-top: 110px;
+
     background-image: url("../img/bg-tablet@1x.jpg");
   }
 
@@ -69,7 +74,16 @@
   }
 
   .page-main__invite-item {
-    font-size: 40px;
     margin: 0;
+
+    font-size: 40px;
+  }
+
+  .page-main__research {
+    display: block;
+
+    color: @color-dark;
+
+    background-color: @color-light;
   }
 }

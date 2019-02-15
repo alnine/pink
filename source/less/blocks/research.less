@@ -1,0 +1,76 @@
+@media (min-width: @tablet) {
+  .research {
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+
+  .research__article {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 276px;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 25px;
+    padding-left: 307px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      display: block;
+      width: 238px;
+      height: 276px;
+
+      background-image: url("../img/timer.svg");
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      content: "24";
+      position: absolute;
+      top: 55px;
+      left: 18px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+      width: 202px;
+      height: 202px;
+
+      font-weight: @font-bold;
+      font-size: 96px;
+      line-height: 96px;
+      color: @color-bright;
+
+      border: 18px solid @color-bright;
+      border-radius: 50%;
+    }
+  }
+
+  .research__article-title {
+    margin: 0;
+
+    font-weight: @font-bold;
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .research__article-preview {
+    margin: 15px 0;
+
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .research__article-link {
+    font-size: 14px;
+    line-height: 24px;
+    color: @color-bright;
+  }
+}
