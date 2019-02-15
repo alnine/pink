@@ -52,3 +52,35 @@
   line-height: 24px;
   color: @color-dark;
 }
+
+@media (min-width: @tablet) {
+
+
+  .features__list {
+    padding-top: 95px;
+    padding-bottom: 60px;
+    padding-left: 310px;
+
+    &::after {
+      bottom: auto;
+      top: 0;
+      left: 0;
+
+      width: 268px;
+      height: 547px;
+      margin: auto;
+
+      background-image: url("../img/iphone-tablet@1x.png");
+      transform: none;
+    }
+  }
+
+  .features__item {
+    margin-bottom: 40px;
+    text-align: left;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
