@@ -31,6 +31,10 @@
   font-style: normal;
 }
 
+.feedback__item-author-about {
+  display: none;
+}
+
 .feedback__item-text {
   margin: 0;
   padding: 0;
@@ -38,4 +42,30 @@
   font-size: 14px;
   line-height: 30px;
   text-align: center;
+}
+
+@media (min-width: @tablet) {
+  .feedback__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .feedback__item-author {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    order: 1;
+    margin-bottom: 0;
+  }
+
+  .feedback__item-author-about {
+    display: block;
+    font-size: 14px;
+    font-weight: @font-regular;
+  }
+
+  .feedback__item-text {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
 }
