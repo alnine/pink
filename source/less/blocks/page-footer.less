@@ -6,6 +6,10 @@
   background-color: @color-light;
 }
 
+.page-footer__index-page {
+  display: none;
+}
+
 .page-footer__container {
   display: flex;
   flex-direction: column;
@@ -14,11 +18,31 @@
 }
 
 .page-footer__logo {
-  width: 146px;
+  width: 147px;
   height: 40px;
   margin-bottom: 40px;
 }
 
 .page-footer__social {
   margin-bottom: 40px;
+}
+
+@media (min-width: @tablet) {
+  .page-footer__index-page {
+    display: block;
+  }
+
+  .page-footer__container {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .page-footer__logo {
+    margin: 0;
+    margin-top: -15px;
+  }
+
+  .page-footer__social {
+    margin: 0 auto;
+  }
 }
