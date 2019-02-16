@@ -11,8 +11,6 @@
 .slider__control {
   display: flex;
   justify-content: center;
-  margin: 0 auto;
-  margin-top: 40px;
 }
 
 .slider__control-item {
@@ -55,4 +53,12 @@
 #slide-feedback-3:checked ~ .slider__list,
 #slide-tariff-3:checked ~ .slider__list {
   transform: translateX(-66.6666%);
+}
+
+@media (min-width: @tablet) {
+  #slide-tariff-1:checked ~ .slider__list,
+  #slide-tariff-2:checked ~ .slider__list,
+  #slide-tariff-3:checked ~ .slider__list {
+    transform: none;
+  }
 }
