@@ -8,12 +8,17 @@
 .photos__appeal {
   max-width: 320px;
   margin: 0 auto;
+  margin-bottom: 50px;
   padding: 0 20px;
 
   font-weight: @font-regular;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .photos__list {
@@ -28,8 +33,16 @@
   &--panorama {
     width: 320px;
     margin: 0 auto;
-    margin-top: 50px;
     margin-bottom: 20px;
+
+    & .photos__item-image {
+      width: 320px;
+      height: 137px;
+    }
+
+    & .photos__item-description {
+      margin: 0 20px;
+    }
   }
 }
 
@@ -42,21 +55,12 @@
 .photos__item-image {
   width: 280px;
   height: 180px;
-
-  &--panorama {
-    width: 320px;
-    height: 137px;
-  }
 }
 
 .photos__item-description {
   padding: 20px 15px;
 
   background-color: @color-light-medium;
-
-  &--panorama {
-    margin: 0 20px;
-  }
 }
 
 .photos__item-comment {
