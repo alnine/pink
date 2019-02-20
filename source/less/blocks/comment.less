@@ -1,12 +1,12 @@
 .comment {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
   margin: 0;
   padding: 20px 15px;
 
   font-size: 14px;
   line-height: 24px;
+
   background-color: @color-light-medium;
 }
 
@@ -27,9 +27,9 @@
 }
 
 .comment__responce {
-  margin-top: 15px;
   display: flex;
   align-items: center;
+  margin-top: 15px;
 }
 
 .comment__responce-btn {
@@ -42,6 +42,7 @@
 
   background: none;
   border: none;
+  cursor: pointer;
 }
 
 .comment__responce-btn-img {
@@ -56,4 +57,39 @@
   line-height: 24px;
   color: @color-bright;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet) {
+  .comment {
+    &--panorama {
+      justify-content: space-between;
+
+      & .comment__text {
+        order: 1;
+      }
+
+      & .comment__responce {
+        width: auto;
+        margin: 0;
+      }
+
+      & .comment__responce-btn {
+        margin-left: 20px;
+      }
+    }
+  }
+
+  .comment__text {
+    min-height: 48px;
+  }
+
+  .comment__responce {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .comment__responce-btn {
+    order: 1;
+    margin-right: 0;
+  }
 }

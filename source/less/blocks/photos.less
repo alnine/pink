@@ -56,3 +56,51 @@
   width: 280px;
   height: 180px;
 }
+
+@media (min-width: @tablet) {
+  .photos {
+    padding-top: 95px;
+    padding-bottom: 65px;
+  }
+
+  .photos__appeal {
+    max-width: 436px;
+    margin-bottom: 75px;
+
+    font-size: 18px;
+  }
+
+  .photos__list {
+    margin-bottom: 50px;
+  }
+
+  .photos__list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .photos__item {
+    width: 300px;
+
+    &--panorama {
+      width: 660px;
+      margin: 0 auto;
+      margin-bottom: 50px;
+
+      & .photos__item-image {
+        width: 660px;
+        height: 509px;
+      }
+
+      & .photos__item-comment {
+        margin: 0 20px;
+      }
+    }
+  }
+
+  .photos__item-image {
+    width: 300px;
+    height: 300px;
+  }
+}
