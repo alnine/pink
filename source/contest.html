@@ -44,11 +44,11 @@
       <h1 class="page-main__title">Competition for the&nbsp;most&nbsp;insane trip&nbsp;with&nbsp;Pink</h1>
 
       <form class="page-main__contest contest-form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="contest-form__container container">
-          <h2 class="contest-form__invite">
+        <h2 class="contest-form__invite">
             Share your story and get a&nbsp;chance to&nbsp;win a&nbsp;valuable prize&nbsp;&mdash; 1000 miles to&nbsp;your bonus card!
             <span class="contest-form__invite-to-fill-in">Please fill in&nbsp;the form below:</span>
-          </h2>
+        </h2>
+        <div class="contest-form__container container">
           <fieldset class="contest-form__set text-set">
             <legend class="visually-hidden">Participant</legend>
             <ul class="text-set__list">
@@ -60,9 +60,13 @@
                 <label class="text-set__item-caption" for="name">Name:</label>
                 <input class="text-set__item-field" type="text" name="name" id="name" placeholder="Enter your name *" required>
               </li>
+              <li class="text-set__item">
+                <label class="text-set__item-caption" for="nickname">Nickname:</label>
+                <input class="text-set__item-field" type="text" name="name" id="nickname" placeholder="And nickname if you want">
+              </li>
             </ul>
           </fieldset>
-          <fieldset class="contest-form__set checkbox-set">
+          <fieldset class="contest-form__set contest-form__set--border checkbox-set">
             <legend class="contest-form__set-title">Your crazy achievements in&nbsp;travel</legend>
             <ul class="checkbox-set__list">
               <li class="checkbox-set__item">
@@ -91,7 +95,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="contest-form__set text-set">
+          <fieldset class="contest-form__set contest-form__set--border text-set">
             <legend class="contest-form__set-title contest-form__set-title-contact">Contact Information</legend>
             <ul class="text-set__list">
               <li class="text-set__item">
@@ -104,7 +108,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="contest-form__set radio-set">
+          <fieldset class="contest-form__set contest-form__set--border radio-set">
             <legend class="contest-form__set-title">With which application traveled?</legend>
             <ul class="radio-set__list">
               <li class="radio-set__item">
@@ -121,7 +125,7 @@
               </li>
             </ul>
           </fieldset>
-          <div class="contest-form__set message-set">
+          <div class="contest-form__set contest-form__set--border message-set">
             <label class="contest-form__set-title message-set__title" for="message">Describe your emotions</label>
             <textarea class="message-set__area" name="message" id="message" cols="20" rows="5" placeholder="Feel free to expressions"></textarea>
           </div>

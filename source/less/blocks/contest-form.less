@@ -4,10 +4,10 @@
 }
 
 .contest-form__container {
-  width: 100%;
-  padding: 0;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  padding: 0;
 }
 
 .contest-form__invite {
@@ -195,12 +195,130 @@
 
 .contest-form__legend {
   margin-top: 35px;
+
   font-size: 14px;
   line-height: 30px;
-  text-transform: uppercase;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .legend-symbol {
   color: @color-bright;
+}
+
+@media (min-width: @tablet) {
+  .contest-form {
+    padding-top: 95px;
+    padding-bottom: 50px;
+  }
+
+  .contest-form__container {
+    width: 660px;
+    padding: 0 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .contest-form__invite {
+    max-width: 485px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    padding: 0;
+
+    font-size: 18px;
+  }
+
+  .contest-form__invite-to-fill-in {
+    display: block;
+  }
+
+  .contest-form__set {
+    width: 100%;
+    margin-bottom: 70px;
+    padding: 0;
+
+    background-color: transparent;
+
+    &--border {
+      position: relative;
+
+      padding: 0 60px;
+
+      border: 2px solid @color-light-medium;
+
+      .contest-form__set-title {
+        position: absolute;
+        left: 50%;
+        z-index: 1;
+
+        display: table;
+        width: auto;
+        margin: 0;
+        padding: 0 32px;
+
+        background-color: @color-light;
+        transform: translate(-50%, -50%);
+      }
+
+      .text-set__list {
+        padding-top: 45px;
+        padding-bottom: 25px;
+      }
+
+      .text-set__item {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        margin-bottom: 30px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      .text-set__item-caption {
+        margin-top: 10px;
+        margin-left: 20px;
+      }
+
+      .text-set__item-field {
+        width: 100%;
+      }
+
+      .checkbox-set__list,
+      .radio-set__list {
+        padding: 55px 0;
+      }
+
+      .message-set__area {
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+  .text-set__item {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+
+  .text-set__item-caption {
+    margin: 0;
+    margin-right: 20px;
+  }
+
+  .text-set__item-field {
+    flex-grow: 1;
+  }
+
+  .contest-form__btn {
+    width: 300px;
+    margin: 0;
+  }
+
+  .contest-form__legend {
+    margin: 0;
+  }
 }
