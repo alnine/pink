@@ -102,6 +102,8 @@
 
   .promo__container {
     display: flex;
+    width: 100%;
+    max-width: 940px;
   }
 
   .promo__banner {
@@ -129,5 +131,35 @@
 
   .promo__legend {
     font-size: 18px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .promo {
+    min-height: 644px;
+    padding: 100px 0;
+
+    &::before {
+      width: 940px;
+      height: 645px;
+      top: auto;
+      bottom: 0;
+
+      background-image: url("../img/hand-desktop@1x.png");
+      background-position-x: 0;
+    }
+  }
+
+  .promo__title {
+    font-size: 50px;
+    margin-bottom: 60px;
+  }
+
+  .promo__btn {
+    margin-bottom: 65px;
+  }
+
+  .promo__market-list {
+    margin-bottom: 55px;
   }
 }
