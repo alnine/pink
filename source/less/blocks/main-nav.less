@@ -29,3 +29,30 @@
 .main-nav--opened {
   display: block;
 }
+
+@media (min-width: @desktop) {
+  .main-nav {
+    display: block;
+    width: auto;
+  }
+
+  .main-nav__list {
+    flex-direction: row;
+  }
+
+  .main-nav__item {
+    margin-right: 80px;
+    box-shadow: none;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .main-nav__item-link {
+    padding: 0;
+    font-weight: @font-regular;
+    line-height: 18px;
+    text-transform: capitalize;
+  }
+}

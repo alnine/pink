@@ -81,3 +81,26 @@
     margin-top: 42px;
   }
 }
+
+@media (min-width: @desktop) {
+  .page-header__container {
+    width: 940px;
+  }
+
+  .page-header__logo {
+    margin-left: 0;
+    margin-right: 175px;
+
+    &-tablet {
+      display: none;
+    }
+
+    &-desktop {
+      display: block;
+    }
+  }
+
+  .page-header__main-nav {
+    margin: 0;
+  }
+}
