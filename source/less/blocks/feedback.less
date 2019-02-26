@@ -3,12 +3,18 @@
 }
 
 .feedback__container {
-  width: 100%;
-  padding: 0;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
 }
 
 .feedback__list {
+  width: 100%;
+  overflow: hidden;
+}
+
+.feedback__list-container {
   display: flex;
   width: 300%;
 }
@@ -16,7 +22,6 @@
 .feedback__item {
   width: 33.333333%;
   margin: 0;
-  padding: 0 20px;
 }
 
 .feedback__item-author {
