@@ -106,3 +106,32 @@
     margin-top: 30px;
   }
 }
+
+@media (min-width: @desktop) {
+  .contact {
+    padding-top: 70px;
+  }
+
+  .contact__title {
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 70px;
+  }
+
+  .contact__item {
+    width: 33%;
+    margin-bottom: 0;
+
+    &--last-item {
+      order: 1;
+    }
+  }
+
+  .contact__item-title {
+    margin-bottom: 25px;
+  }
+
+  .contact__map {
+    height: 500px;
+  }
+}
