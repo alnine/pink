@@ -3,9 +3,10 @@
 }
 
 .feedback__container {
+  position: relative;
+
   display: flex;
   flex-direction: column;
-  position: relative;
   align-items: center;
 }
 
@@ -61,21 +62,91 @@
   }
 
   .feedback__item-author {
-    font-size: 20px;
     display: flex;
     flex-direction: column;
     order: 1;
     margin-bottom: 0;
+
+    font-size: 20px;
   }
 
   .feedback__item-author-about {
     display: block;
-    font-size: 14px;
+
     font-weight: @font-regular;
+    font-size: 14px;
   }
 
   .feedback__item-text {
-    font-size: 18px;
     margin-bottom: 30px;
+
+    font-size: 18px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .feedback {
+    padding-top: 185px;
+
+    background-image: url("../img/quotes.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 72px;
+    background-size: 79px 63px;
+  }
+
+  .feedback__list {
+    width: 685px;
+  }
+
+  .feedback__item-author {
+    font-size: 24px;
+  }
+
+  .feedback__item-author-about {
+    font-size: 18px;
+  }
+
+  .feedback__js-slider-control {
+    position: absolute;
+    top: 25px;
+    padding: 0;
+
+    display: block;
+    width: 30px;
+    height: 30px;
+
+    font-size: 0;
+
+    background: none;
+    border: 2px solid @color-medium;
+    border-right: none;
+    border-bottom: none;
+    cursor: pointer;
+
+    &--prev {
+      left: 0;
+
+      transform: rotate(-45deg);
+    }
+
+    &--next {
+      right: 0;
+
+      transform: rotate(135deg);
+    }
+  }
+
+  .feedback__slider-control {
+    display: none;
+  }
+
+  .feedback--no-js {
+    .feedback__js-slider-control {
+      display: none;
+    }
+
+    .feedback__slider-control {
+      display: flex;
+    }
   }
 }
