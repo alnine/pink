@@ -6,4 +6,51 @@
 .logo__image {
   width: 100%;
   height: auto;
+
+  fill: @logo-light;
+
+  &--footer-tablet,
+  &--footer-desktop {
+    fill: @logo-dark;
+  }
+
+  &--header-tablet,
+  &--header-desktop,
+  &--footer-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet) {
+  .logo__image {
+    &--header-mobile {
+      display: none;
+    }
+
+    &--header-tablet {
+      display: block;
+    }
+  }
+
+  .logo[href] {
+    &:hover {
+      .logo__image {
+        fill: @logo-bright;
+      }
+    }
+  }
+}
+
+@media (min-width: @desktop) {
+  .logo__image {
+    &--header-tablet,
+    &--footer-tablet {
+      display: none;
+    }
+
+    &--header-desktop,
+    &--footer-desktop {
+      display: block;
+    }
+  }
 }
