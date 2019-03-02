@@ -55,4 +55,29 @@
     line-height: 18px;
     text-transform: capitalize;
   }
+
+  .main-nav__item-link:not([href]) {
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: -10px;
+      background-color: @color-light;
+    }
+  }
+
+  .main-nav__item-link[href] {
+    &:hover:not(:active),
+    &:focus:not(:active) {
+      color: @color-bright;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }
