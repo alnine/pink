@@ -21,6 +21,19 @@
   }
 }
 
+.logo[href] {
+  &:hover:not(:active),
+  &:focus:not(:active) {
+    .logo__image {
+      fill: @logo-bright;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: @tablet) {
   .logo__image {
     &--header-mobile {
@@ -29,19 +42,6 @@
 
     &--header-tablet {
       display: block;
-    }
-  }
-
-  .logo[href] {
-    &:hover:not(:active),
-    &:focus:not(:active) {
-      .logo__image {
-        fill: @logo-bright;
-      }
-    }
-
-    &:active {
-      opacity: 0.3;
     }
   }
 }
