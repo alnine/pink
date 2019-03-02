@@ -33,10 +33,15 @@
   }
 
   .logo[href] {
-    &:hover {
+    &:hover:not(:active),
+    &:focus:not(:active) {
       .logo__image {
         fill: @logo-bright;
       }
+    }
+
+    &:active {
+      opacity: 0.3;
     }
   }
 }
