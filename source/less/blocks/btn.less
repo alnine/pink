@@ -1,7 +1,11 @@
 .btn {
   width: 100%;
+  padding: 14px 30px;
+  padding-bottom: 15px;
 
   font-weight: @font-bold;
+  font-size: 18px;
+  line-height: 18px;
   text-align: center;
   color: inherit;
   text-decoration: none;
@@ -10,43 +14,79 @@
   border: none;
   cursor: pointer;
 
-  &--default {
-    padding: 16px 30px;
-    padding-bottom: 17px;
-
-    font-size: 18px;
-    line-height: 30px;
-    color: @btn-color-light;
-    text-transform: uppercase;
-
-    background-color: @btn-color-default;
-  }
-
-  &--disabled {
-    opacity: 0.1;
-  }
-
   &--round {
-    padding: 14px 30px;
-    padding-bottom: 15px;
-
-    font-size: 21px;
-    line-height: 18px;
-
     border-width: 3px;
     border-style: solid;
     border-radius: 30px;
+  }
 
-    &--light {
-      color: @btn-color-light;
+  &--download {
+    font-size: 21px;
+    line-height: 21px;
+    color: @btn-font-light;
 
-      border-color: @btn-color-light;
+    border-color: @btn-download-border;
+
+    &:hover,
+    &:focus {
+      color: @btn-font-bright;
+      background-color: @btn-download-bg;
     }
 
-    &--bright {
-      color: @btn-color-bright;
-
-      border-color: @btn-color-bright;
+    &:active {
+      color: @btn-font-bright-active;
     }
+  }
+
+  &--upload {
+    color: @btn-font-bright;
+    border-color: @btn-upload-border;
+
+    &:hover,
+    &:focus {
+      color: @btn-font-light;
+      background-color: @btn-upload-bg;
+    }
+
+    &:active {
+      color: @btn-font-light-active;
+    }
+  }
+
+  &--cancel {
+    color: @btn-cancel-color;
+    border-color: @btn-cancel-color;
+    opacity: 0.1;
+
+    &:hover,
+    &:focus {
+      opacity: 0.3;
+    }
+
+    &:active {
+      color: @btn-font-light;
+      background-color: @btn-cancel-color;
+    }
+  }
+
+  &--common {
+    color: @btn-font-light;
+    background-color: @btn-common-bg;
+    text-transform: uppercase;
+
+    &:hover,
+    &:focus {
+      background-color: @btn-common-bg-hover;
+    }
+
+    &:active {
+      color: @btn-font-light-active;
+    }
+  }
+
+  &:disabled {
+    color: @btn-font-light;
+    background-color: @btn-common-bg-disabled;
+    border-color: @btn-common-bg-disabled;
   }
 }
