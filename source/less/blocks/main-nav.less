@@ -30,12 +30,13 @@
   }
 
   &[href] {
-    &:hover,
-    &:focus {
+    &:hover:not(:active),
+    &:focus:not(:active) {
       color: @color-bright;
     }
 
     &:active {
+      color: @color-bright;
       opacity: 0.3;
     }
   }
@@ -72,6 +73,7 @@
 
     &:not([href]) {
       position: relative;
+      opacity: 1;
 
       &::after {
         content: "";
@@ -85,9 +87,8 @@
     }
 
     &[href] {
-      &:hover:not(:active),
-      &:focus:not(:active) {
-        color: @color-bright;
+      &:active {
+        color: @color-light;
       }
     }
   }
