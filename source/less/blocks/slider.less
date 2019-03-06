@@ -25,6 +25,15 @@
   border-radius: 50%;
   opacity: 0.3;
 
+  &:hover:not(:active),
+  &:focus:not(:active) {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+
   &:last-child {
     margin-right: 0;
   }
