@@ -76,4 +76,11 @@
 
     cursor: pointer;
   }
+
+  &:focus,
+  &:active {
+    &::-webkit-slider-thumb {
+      background-color: @thumb-border-color;
+    }
+  }
 }
