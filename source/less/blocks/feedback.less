@@ -118,10 +118,12 @@
     font-size: 0;
 
     background: none;
-    border: 2px solid @color-medium;
+    border: 2px solid @color-dark;
     border-right: none;
     border-bottom: none;
     cursor: pointer;
+    opacity: 0.3;
+    outline: none;
 
     &--prev {
       left: 0;
@@ -133,6 +135,15 @@
       right: 0;
 
       transform: rotate(135deg);
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
     }
   }
 
