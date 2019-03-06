@@ -55,6 +55,16 @@
   text-align: center;
   color: @color-bright;
   text-decoration: none;
+
+  &[href]:hover,
+  &[href]:focus {
+    color: @color-dark;
+    text-decoration: underline;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
 }
 
 .contact__map {
