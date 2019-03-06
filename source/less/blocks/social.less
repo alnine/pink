@@ -19,6 +19,15 @@
   &:last-child {
     margin-right: 0;
   }
+
+  &:hover:not(:active),
+  &:focus:not(:active) {
+    border-color: @color-dark;
+  }
+
+  &:active .social__item-image {
+    opacity: 0.3;
+  }
 }
 
 .social__item-image {
