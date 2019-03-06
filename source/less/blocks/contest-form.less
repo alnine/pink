@@ -88,6 +88,15 @@
   &::placeholder {
     color: @color-dark;
   }
+
+  &:hover {
+    border-color: @color-dark;
+  }
+
+  &:focus {
+    border-color: @color-bright;
+    outline: none;
+  }
 }
 
 .contest-form__set-checkbox-item {
@@ -132,6 +141,19 @@
     border: 2px solid @color-medium;
     transform: translateY(-50%);
   }
+
+  &:hover::before {
+    border-color: @color-dark;
+  }
+
+  &:active::before {
+    border-color: @color-bright;
+  }
+}
+
+.contest-form__set-checkbox-field:focus + .contest-form__set-checkbox-caption::before,
+.contest-form__set-radio-field:focus + .contest-form__set-radio-caption::before {
+  border-color: @color-bright;
 }
 
 .contest-form__set-radio-caption {
@@ -184,6 +206,15 @@
 
   &::placeholder {
     color: @color-dark;
+  }
+
+  &:hover {
+    border-color: @color-dark;
+  }
+
+  &:focus {
+    border-color: @color-bright;
+    outline: none;
   }
 }
 
