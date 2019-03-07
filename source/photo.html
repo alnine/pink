@@ -55,7 +55,15 @@
         <article class="photos__item photos__item--panorama">
           <h4 class="visually-hidden">Panorama of the day</h4>
           <a href="#" class="photos__item-link">
-            <img class="photos__item-image" src="img/photo-panorama-mobile@1x.jpg" width="320" height="137" alt="Image of panorama of the day">
+            <picture>
+              <source type="image/webp" media="(min-width: 1000px)" srcset="img/photo-panorama-desktop@1x.webp 1x, img/photo-panorama-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 680px)" srcset="img/photo-panorama-tablet@1x.webp 1x, img/photo-panorama-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-panorama-mobile@1x.webp 1x, img/photo-panorama-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1000px)" srcset="img/photo-panorama-desktop@1x.jpg 1x, img/photo-panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 680px)" srcset="img/photo-panorama-tablet@1x.jpg 1x, img/photo-panorama-tablet@2x.jpg 2x">
+              <img class="photos__item-image" src="img/photo-panorama-mobile@1x.jpg" srcset="img/photo-panorama-mobile@2x.jpg 2x" width="320" height="137" alt="Image of panorama of the day">
+            </picture>
           </a>
           <blockquote class="photos__item-comment comment comment--panorama">
             <cite class="comment__author">
@@ -85,7 +93,15 @@
             <article class="photos__item">
               <h4 class="visually-hidden">User photo example</h4>
               <a href="#" class="photos__item-link">
-                <img class="photos__item-image" src="img/photo-1-mobile@1x.jpg" width="280" height="180" alt="Car photosession">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1000px)" srcset="img/photo-1-desktop@1x.webp 1x, img/photo-1-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 680px)" srcset="img/photo-1-tablet@1x.webp 1x, img/photo-1-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-1-mobile@1x.webp 1x, img/photo-1-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 1000px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                  <source media="(min-width: 680px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                  <img class="photos__item-image" src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" width="280" height="180" alt="Car photosession">
+                </picture>
               </a>
               <blockquote class="photos__item-comment comment">
                 <cite class="comment__author">
@@ -112,7 +128,15 @@
             <article class="photos__item">
               <h4 class="visually-hidden">User photo example</h4>
               <a href="#" class="photos__item-link">
-                <img class="photos__item-image" src="img/photo-2-mobile@1x.jpg" width="280" height="180" alt="Image of drums">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1000px)" srcset="img/photo-2-desktop@1x.webp 1x, img/photo-2-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 680px)" srcset="img/photo-2-tablet@1x.webp 1x, img/photo-2-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-2-mobile@1x.webp 1x, img/photo-2-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 1000px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                  <source media="(min-width: 680px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+                  <img class="photos__item-image" src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" width="280" height="180" alt="Image of drums">
+                </picture>
               </a>
               <blockquote class="photos__item-comment comment">
                 <cite class="comment__author">
@@ -139,7 +163,15 @@
             <article class="photos__item">
               <h4 class="visually-hidden">User photo example</h4>
               <a href="#" class="photos__item-link">
-                <img class="photos__item-image" src="img/photo-3-mobile@1x.jpg" width="280" height="180" alt="Photos from the inside of the building">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1000px)" srcset="img/photo-3-desktop@1x.webp 1x, img/photo-3-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 680px)" srcset="img/photo-3-tablet@1x.webp 1x, img/photo-3-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-3-mobile@1x.webp 1x, img/photo-3-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 1000px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+                  <source media="(min-width: 680px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+                  <img class="photos__item-image" src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" width="280" height="180" alt="Photos from the inside of the building">
+                </picture>
               </a>
               <blockquote class="photos__item-comment comment">
                 <cite class="comment__author">
@@ -166,7 +198,15 @@
             <article class="photos__item">
               <h4 class="visually-hidden">User photo example</h4>
               <a href="#" class="photos__item-link">
-                <img class="photos__item-image" src="img/photo-4-mobile@1x.jpg" width="280" height="180" alt="Kuban melon market">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1000px)" srcset="img/photo-4-desktop@1x.webp 1x, img/photo-4-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 680px)" srcset="img/photo-4-tablet@1x.webp 1x, img/photo-4-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-4-mobile@1x.webp 1x, img/photo-4-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 1000px)" srcset="img/photo-4-desktop@1x.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+                  <source media="(min-width: 680px)" srcset="img/photo-4-tablet@1x.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+                  <img class="photos__item-image" src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" width="280" height="180" alt="Kuban melon market">
+                </picture>
               </a>
               <blockquote class="photos__item-comment comment">
                 <cite class="comment__author">
@@ -193,7 +233,15 @@
             <article class="photos__item">
               <h4 class="visually-hidden">User photo example</h4>
               <a href="#" class="photos__item-link">
-                <img class="photos__item-image" src="img/photo-5-mobile@1x.jpg" width="280" height="180" alt="Photo of feet over the cliff">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1000px)" srcset="img/photo-5-desktop@1x.webp 1x, img/photo-5-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 680px)" srcset="img/photo-5-tablet@1x.webp 1x, img/photo-5-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-5-mobile@1x.webp 1x, img/photo-5-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 1000px)" srcset="img/photo-5-desktop@1x.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
+                  <source media="(min-width: 680px)" srcset="img/photo-5-tablet@1x.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
+                  <img class="photos__item-image" src="img/photo-5-mobile@1x.jpg" srcset="img/photo-5-mobile@2x.jpg" width="280" height="180" alt="Photo of feet over the cliff">
+                </picture>
               </a>
               <blockquote class="photos__item-comment comment">
                 <cite class="comment__author">
@@ -218,7 +266,15 @@
             <article class="photos__item">
               <h4 class="visually-hidden">User photo example</h4>
               <a href="#" class="photos__item-link">
-                <img class="photos__item-image" src="img/photo-6-mobile@1x.jpg" width="280" height="180" alt="Photo of the wing of the plane on the background of the dawn">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1000px)" srcset="img/photo-6-desktop@1x.webp 1x, img/photo-6-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 680px)" srcset="img/photo-6-tablet@1x.webp 1x, img/photo-6-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-6-mobile@1x.webp 1x, img/photo-6-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 1000px)" srcset="img/photo-6-desktop@1x.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
+                  <source media="(min-width: 680px)" srcset="img/photo-6-tablet@1x.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
+                  <img class="photos__item-image" src="img/photo-6-mobile@1x.jpg" width="280" height="180" alt="Photo of the wing of the plane on the background of the dawn">
+                </picture>
               </a>
               <blockquote class="photos__item-comment comment">
                 <cite class="comment__author">
@@ -252,7 +308,13 @@
       <section class="page-main__editor editor">
         <h2 class="visually-hidden">Photo editor</h2>
         <form class="editor__container container" action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data">
-          <img class="editor__img-preview" src="img/photo-demo-mobile@1x.jpg" width="280" height="374" alt="Preview result of photo editor">
+          <picture>
+            <source type="image/webp" media="(min-width: 680px)" srcset="img/photo-demo@1x.webp 1x, img/photo-demo@2x.webp 2x">
+            <source type="image/webp" srcset="img/photo-demo-mobile@1x.webp 1x, img/photo-demo-mobile@2x.webp 2x">
+
+            <source media="(min-width: 680px)" srcset="img/photo-demo@1x.jpg 1x, img/photo-demo@2x.jpg 2x">
+            <img class="editor__img-preview" src="img/photo-demo-mobile@1x.jpg" srcset="img/photo-demo-mobile@2x.jpg" width="280" height="374" alt="Preview result of photo editor">
+          </picture>
           <fieldset class="editor__tools">
             <legend class="visually-hidden">Editor tools</legend>
             <ul class="editor__tools-list">

@@ -16,7 +16,12 @@
     background-image: url("../img/hand-mobile@1x.png");
     background-repeat: no-repeat;
     background-position: -153px 0;
+    background-size: 498px auto;
     transform: translateX(-50%);
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/hand-mobile@2x.png");
+    }
   }
 }
 
@@ -98,6 +103,11 @@
 
       background-image: url("../img/hand-tablet@1x.png");
       background-position-x: -105px;
+      background-size: 887px auto;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/hand-tablet@2x.png");
+      }
     }
   }
 
@@ -150,6 +160,11 @@
 
       background-image: url("../img/hand-desktop@1x.png");
       background-position-x: 0;
+      background-size: 1050px auto;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/hand-desktop@2x.png");
+      }
     }
   }
 
