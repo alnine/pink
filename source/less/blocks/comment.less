@@ -39,10 +39,25 @@
   margin: 0;
   margin-right: 20px;
   padding: 0;
+  font-size: 0;
 
   background: none;
   border: none;
   cursor: pointer;
+  outline: none;
+
+  &:focus:not(:active) {
+    .comment__responce-btn-img {
+      fill: @color-dark;
+    }
+  }
+
+  &:active {
+    .comment__responce-btn-img {
+      opacity: 0.3;
+      outline: none;
+    }
+  }
 }
 
 .comment__responce-btn-img {
@@ -50,6 +65,10 @@
   height: auto;
 
   fill: @color-bright;
+
+  &:hover:not(:active) {
+    fill: @color-dark;
+  }
 }
 
 .comment__responce-rate {
